@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container-fluid">
+  <h1>
+    {{ title }}
+  </h1>
+  <div class="input-group">
+    <input type="text" class="form-control" #inputSearch placeholder="Search for prefered images">
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="button"  (click)="getImages(inputSearch.value)">Search Images</button>
+    </span>
+  </div>
+
+  <hr/>
+    <div *ngIf="showDiv">
+    <div class="singleImage" *ngFor="let image of images.hits">
+      <div class="card">
+        <div class="card-header">
+          Views: {{image.views}}
+        </div>
+        <img class="card-img-top" src="{{image.previewURL}}">
+        <div class="card-block">
+          <p class="card-text">Tags:{{image.tags}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+ 

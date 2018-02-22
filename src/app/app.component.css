@@ -1,0 +1,32 @@
+input{
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.singleImage{
+    border: 1px solid #7d8289;
+    margin:10px;
+    width: 252px;  
+}
+.card-header{
+    text-align: center;
+}
+span {
+    width: 300px;
+    margin:0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.card-text{
+    padding:3px;
+}
+h1{
+    text-align: center;
+}
+.singleImage{
+    margin:5px;
+    display: inline-block;
+}
